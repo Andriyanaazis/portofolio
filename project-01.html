@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Case study: Event Logistics Monitoring Web App built with Google Sheets, Google Apps Script, HTML, CSS, and JavaScript.">
+  <title>Event Logistics Monitoring Web App | Andriyana Abdullah A.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/project.css">
+</head>
+<body>
+
+  <header class="project-header">
+    <div class="container nav-wrap">
+      <a href="index.html" class="brand">ANDRIYANA <span>ABDULLAH A.</span></a>
+      <a href="index.html#projects" class="back-link">← Back to Projects</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="case-hero">
+      <div class="container">
+        <div class="eyebrow"><span></span> PROJECT 01 · CASE STUDY</div>
+        <h1>Event Logistics<br><strong>Monitoring Web App</strong></h1>
+        <p class="hero-subtitle">From Email Threads to a Centralized Operational Interface</p>
+        <p class="hero-intro">
+          A lightweight web application for organizing and monitoring event schedules, loading activities,
+          vehicles, and drivers in one accessible interface.
+        </p>
+
+        <div class="meta-grid">
+          <div class="meta-card">
+            <span>Project Type</span>
+            <strong>Operational Initiative / Prototype</strong>
+          </div>
+          <div class="meta-card">
+            <span>Role</span>
+            <strong>Developer &amp; Data / Admin Solution Builder</strong>
+          </div>
+          <div class="meta-card">
+            <span>Tools</span>
+            <strong>Google Sheets · Apps Script · HTML · CSS · JavaScript</strong>
+          </div>
+          <div class="meta-card">
+            <span>Interface</span>
+            <strong>Desktop &amp; Smartphone</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FULL PAGE PREVIEW -->
+    <section class="section section-preview">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-number">01</span>
+          <div>
+            <h2>Project Preview</h2>
+            <p>Full-page view of the Event Logistics Monitoring Web App.</p>
+          </div>
+        </div>
+
+        <figure class="image-frame fullpage-frame">
+          <img src="assets/images/project-01/project01-fullpage.png" alt="Full-page desktop view of the Event Logistics Monitoring Web App" loading="eager">
+          <figcaption>Portfolio version using simulated event and operational data.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- OVERVIEW -->
+    <section class="section">
+      <div class="container narrow">
+        <div class="section-heading">
+          <span class="section-number">02</span>
+          <div>
+            <h2>Overview</h2>
+          </div>
+        </div>
+        <div class="prose">
+          <p>
+            In General Affairs operations, event schedules and loading activities were often communicated through
+            Outlook group emails. When an event had been confirmed, important information such as the event schedule,
+            location, PIC, loading time, vehicle, and driver needed to be accessed again by the operational team.
+          </p>
+          <p>
+            The challenge was not necessarily the absence of information. The information already existed, but it was
+            distributed across email conversations and was not always convenient to retrieve when daily activities became busy.
+          </p>
+          <p>
+            I created a simple web-based operational dashboard that centralized this information into a single interface
+            accessible from both laptops and smartphones.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CHALLENGE -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-number">03</span>
+          <div>
+            <h2>The Challenge</h2>
+            <p>The information existed — but accessing it again was not always convenient.</p>
+          </div>
+        </div>
+
+        <div class="challenge-grid">
+          <div class="challenge-card">
+            <span class="challenge-icon">01</span>
+            <h3>Information in Email Threads</h3>
+            <p>Event and loading details were communicated through Outlook group emails.</p>
+          </div>
+          <div class="challenge-card">
+            <span class="challenge-icon">02</span>
+            <h3>Repeated Information Retrieval</h3>
+            <p>When information was needed again, the relevant email thread had to be found and reviewed.</p>
+          </div>
+          <div class="challenge-card">
+            <span class="challenge-icon">03</span>
+            <h3>Operational Accessibility</h3>
+            <p>Drivers and operational staff needed a more practical way to access confirmed event information.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- OBJECTIVE -->
+    <section class="section">
+      <div class="container narrow">
+        <div class="section-heading">
+          <span class="section-number">04</span>
+          <div>
+            <h2>The Objective</h2>
+          </div>
+        </div>
+        <div class="objective-box">
+          <p>The goal was to create a simple interface where operational information could be accessed from one place.</p>
+          <ul class="check-list">
+            <li>Find a specific event quickly</li>
+            <li>Search by event, location, PIC, driver, or vehicle</li>
+            <li>Filter events by date, month, or year</li>
+            <li>View Loading In and Loading Out information</li>
+            <li>Check assigned vehicle and driver information</li>
+            <li>Access the dashboard from laptop or smartphone</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- APPROACH + WORKFLOW -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-number">05</span>
+          <div>
+            <h2>My Approach</h2>
+            <p>Turning an existing information flow into a more accessible operational interface.</p>
+          </div>
+        </div>
+
+        <div class="workflow">
+          <div class="workflow-step">
+            <span>01</span>
+            <strong>Outlook Group Email</strong>
+            <small>Confirmed event information</small>
+          </div>
+          <div class="workflow-arrow">→</div>
+          <div class="workflow-step">
+            <span>02</span>
+            <strong>Event Recap</strong>
+            <small>Relevant information organized</small>
+          </div>
+          <div class="workflow-arrow">→</div>
+          <div class="workflow-step">
+            <span>03</span>
+            <strong>Google Sheets</strong>
+            <small>Structured operational data</small>
+          </div>
+          <div class="workflow-arrow">→</div>
+          <div class="workflow-step">
+            <span>04</span>
+            <strong>Google Apps Script</strong>
+            <small>Web application workflow</small>
+          </div>
+          <div class="workflow-arrow">→</div>
+          <div class="workflow-step workflow-final">
+            <span>05</span>
+            <strong>Web Dashboard</strong>
+            <small>Searchable operational interface</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DATA STRUCTURE -->
+    <section class="section">
+      <div class="container two-column">
+        <div>
+          <div class="section-heading compact">
+            <span class="section-number">06</span>
+            <div><h2>Data Structure</h2></div>
+          </div>
+          <p>
+            The confirmed event information was organized in Google Sheets before being presented through the web interface.
+          </p>
+        </div>
+        <div class="field-grid">
+          <div>Event Date</div><div>Event Time</div><div>Event Name</div><div>PIC</div>
+          <div>Location</div><div>Loading In Date</div><div>Loading In Time</div><div>Loading Out Date</div>
+          <div>Loading Out Time</div><div>Vehicle</div><div>Driver</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DESKTOP -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-number">07</span>
+          <div>
+            <h2>Desktop Interface</h2>
+            <p>Search, filters, and operational details in a single desktop view.</p>
+          </div>
+        </div>
+        <figure class="image-frame">
+          <img src="assets/images/project-01/project01-desktop.png" alt="Desktop interface showing search, filters and event details" loading="lazy">
+          <figcaption>Desktop interface with event search, date filters, and operational details.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="section">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-number">08</span>
+          <div>
+            <h2>Key Features</h2>
+            <p>Focused on making operational information easier to find and use.</p>
+          </div>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature-card"><span>⌕</span><h3>Event Search</h3><p>Search by event name, location, PIC, driver, or vehicle.</p></article>
+          <article class="feature-card"><span>▣</span><h3>Date &amp; Period Filters</h3><p>Filter information by date, month, and year.</p></article>
+          <article class="feature-card"><span>↓</span><h3>Loading In</h3><p>View loading-in date and time associated with an event.</p></article>
+          <article class="feature-card"><span>↑</span><h3>Loading Out</h3><p>View loading-out date and time alongside the event.</p></article>
+          <article class="feature-card"><span>🚚</span><h3>Vehicle &amp; Driver</h3><p>Display vehicle and driver information directly in the event card.</p></article>
+          <article class="feature-card"><span>◐</span><h3>Light &amp; Dark Mode</h3><p>Provide an alternative viewing mode for different environments.</p></article>
+          <article class="feature-card"><span>⌁</span><h3>Responsive Layout</h3><p>Designed to work across laptop and smartphone screens.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- MOBILE -->
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-number">09</span>
+          <div>
+            <h2>Responsive Experience</h2>
+            <p>The interface was designed for operational access from smartphones as well as laptops.</p>
+          </div>
+        </div>
+
+        <div class="mobile-showcase">
+          <figure class="phone-shot">
+            <img src="assets/images/project-01/project01-mobile-light.jpg" alt="Mobile light mode version of the Event Logistics Monitoring Web App" loading="lazy">
+            <figcaption>Mobile — Light Mode</figcaption>
+          </figure>
+          <figure class="phone-shot dark-shot">
+            <img src="assets/images/project-01/project01-mobile-dark.jpg" alt="Mobile dark mode version of the Event Logistics Monitoring Web App" loading="lazy">
+            <figcaption>Mobile — Dark Mode</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- TECHNOLOGY -->
+    <section class="section">
+      <div class="container">
+        <div class="section-heading">
+          <span class="section-number">10</span>
+          <div>
+            <h2>Tools &amp; Technologies</h2>
+            <p>A lightweight stack selected for the operational use case.</p>
+          </div>
+        </div>
+        <div class="tech-table">
+          <div class="tech-row tech-head"><strong>Technology</strong><strong>Purpose</strong></div>
+          <div class="tech-row"><strong>Google Sheets</strong><span>Structured event and operational data</span></div>
+          <div class="tech-row"><strong>Google Apps Script</strong><span>Connects the data and web application workflow</span></div>
+          <div class="tech-row"><strong>HTML</strong><span>Web page structure</span></div>
+          <div class="tech-row"><strong>CSS</strong><span>Interface styling and responsive layout</span></div>
+          <div class="tech-row"><strong>JavaScript</strong><span>Search, filtering, interaction, and interface behavior</span></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ROLE -->
+    <section class="section section-alt">
+      <div class="container narrow">
+        <div class="section-heading">
+          <span class="section-number">11</span>
+          <div><h2>My Role</h2></div>
+        </div>
+        <p>I handled the initiative from identifying the operational problem through creating and testing the prototype.</p>
+        <div class="role-list">
+          <div>Identified the information-access problem</div>
+          <div>Defined the required operational fields</div>
+          <div>Structured event information in Google Sheets</div>
+          <div>Designed the dashboard workflow</div>
+          <div>Developed the web interface</div>
+          <div>Implemented search and filtering functionality</div>
+          <div>Added loading, vehicle, and driver information</div>
+          <div>Designed for laptop and smartphone usage</div>
+          <div>Tested the dashboard as an operational information interface</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRIVACY -->
+    <section class="section">
+      <div class="container narrow">
+        <div class="privacy-card">
+          <div class="privacy-label">PORTFOLIO VERSION</div>
+          <h2>Simulated / Dummy Data</h2>
+          <p>
+            The project originated from a General Affairs operational context. The version presented here uses
+            simulated/dummy data and does not expose personal information or confidential company operational data.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- OUTCOME -->
+    <section class="section section-alt">
+      <div class="container narrow">
+        <div class="section-heading">
+          <span class="section-number">12</span>
+          <div><h2>Project Outcome</h2></div>
+        </div>
+        <div class="prose">
+          <p>
+            The result was a working prototype of an operational event monitoring web application. Instead of relying
+            entirely on previously discussed information inside email threads, event information could be presented through
+            a centralized interface.
+          </p>
+          <p>
+            The prototype demonstrated how an existing operational workflow could be transformed into a more accessible
+            digital interface using relatively lightweight tools.
+          </p>
+          <div class="outcome-highlight">
+            <strong>The focus was simple:</strong>
+            <span>make existing operational information easier to access and use.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- REFLECTION -->
+    <section class="section">
+      <div class="container narrow">
+        <div class="section-heading">
+          <span class="section-number">13</span>
+          <div><h2>Project Reflection</h2></div>
+        </div>
+        <div class="reflection">
+          <p>
+            This project started from a relatively simple operational problem: important information was available,
+            but accessing it again was not always convenient.
+          </p>
+          <p>
+            Rather than treating the problem as a need for a large-scale system, I explored whether the existing
+            information could be reorganized into a simpler workflow. The result was a prototype connecting Google Sheets,
+            Google Apps Script, and a web interface.
+          </p>
+          <p>
+            The most valuable part of the project was going through the complete process:
+          </p>
+          <div class="reflection-flow">
+            <span>Problem</span><b>→</b><span>User Need</span><b>→</b><span>Data Structure</span><b>→</b><span>Solution</span><b>→</b><span>Interface</span><b>→</b><span>Testing</span>
+          </div>
+          <p>
+            It reinforced my interest in combining <strong>data management, administrative processes, and practical digital solutions</strong>
+            to improve how information is organized and used.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER CTA -->
+    <section class="case-cta">
+      <div class="container">
+        <p class="eyebrow"><span></span> END OF CASE STUDY</p>
+        <h2>More projects coming together.</h2>
+        <p>Explore the rest of my portfolio to see how I work with data management, spreadsheets, dashboards, and operational processes.</p>
+        <div class="cta-buttons">
+          <a href="index.html#projects" class="btn btn-primary">← Back to Projects</a>
+          <a href="index.html#contact" class="btn btn-secondary">Get in Touch</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="project-footer">
+    <div class="container footer-wrap">
+      <span>© 2026 Andriyana Abdullah A.</span>
+      <a href="index.html">Main Portfolio</a>
+    </div>
+  </footer>
+
+</body>
+</html>
